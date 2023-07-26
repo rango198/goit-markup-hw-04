@@ -5,6 +5,7 @@
   --white: #fff;
   --cloud: #f4f4fd;
   --ocean: #404bbf;
+  --lightslate: #8e8f99;
 }
 
 body {
@@ -68,7 +69,7 @@ h4 {
   align-items: center;
 }
 
-.menu_nav a{
+.menu_nav a {
   display: block;
 }
 
@@ -81,7 +82,7 @@ h4 {
   font-size: 18px;
   text-transform: uppercase;
   margin-right: 76px;
- }
+}
 
 .logo {
   color: var(--navyblue);
@@ -121,8 +122,8 @@ h4 {
   gap: 40px;
 }
 
-.address_list a{
-display: block;
+.address_list a {
+  display: block;
 }
 
 .address_menu_contakts {
@@ -149,10 +150,12 @@ display: block;
   padding: 188px 0;
   background-image: url();
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-  rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   max-width: 1440px;
-
 }
 
 .title_main {
@@ -219,9 +222,11 @@ display: block;
   color: var(--slate);
 }
 
-.section_tow_icon{
-border-radius: 4px;
-background: var(--cloud, #F4F4FD);
+.section_tow_icon {
+  border-radius: 4px;
+  background: var(--cloud);
+  width: 264px;
+  height: 112px;
 }
 
 /*---------------------------------------------section photo-------------------------- */
@@ -258,7 +263,8 @@ background: var(--cloud, #F4F4FD);
   margin: 0;
 }
 
-.title_team {
+.title_team,
+.title_customers {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -285,10 +291,30 @@ background: var(--cloud, #F4F4FD);
   padding: 32px 0;
 }
 
+/* -------------------------------customers---------------------- */
+
+.title_customers {
+  margin-top: 120px;
+}
+
+.customers_icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.section_customers_icon {
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  width: 168px;
+  height: 88px;
+}
+
 /*----------------------------------- footer--------------------- */
 
 .footer {
-  background-color: #2e2f42;
+  background-color: var(--navyblue);
   padding: 100px 0;
 }
 
@@ -316,6 +342,18 @@ background: var(--cloud, #F4F4FD);
   letter-spacing: 0.02em;
   color: var(--cloud);
   max-width: 264px;
+}
+
+.social_media{
+margin-left: 128px;
+}
+
+.container_footer{
+display: flex;
+}
+
+.social_list{
+display: flex;
 }
 
 /*----------------------------------------------- PORTFOLIO--------------------------- */
