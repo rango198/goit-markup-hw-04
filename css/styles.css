@@ -255,7 +255,7 @@ h4 {
   align-items: center;
   justify-content: center;
   height: 112px;
-  background-color:var(--cloud, #f4f4fd) ;
+  background-color: var(--cloud, #f4f4fd);
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -342,7 +342,7 @@ h4 {
   height: 40px;
 }
 
-.social_icon_item {
+.social_icon_send {
   width: 100%;
   height: 100%;
   background-color: var(--iris);
@@ -352,13 +352,13 @@ h4 {
   justify-content: center;
 }
 
-.social_icon_item:hover,
-.social_icon_item:focus {
-  background-color: var(--ocean, #404bbf)   ;
+.social_icon_send:hover,
+.social_icon_send:focus {
+  background-color: var(--ocean, #404bbf);
 }
 
 .section_team_icon {
-  fill: var(--cloud, #f4f4fd)   ;
+  fill: var(--cloud, #f4f4fd);
 }
 
 /* -------------------------------customers---------------------- */
