@@ -443,10 +443,13 @@ h4 {
 }
 
 .footer_text {
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
   max-width: 264px;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .social_media {
@@ -455,10 +458,36 @@ h4 {
 
 .container_footer {
   display: flex;
+  align-items: baseline;
+}
+
+.footer_wrap_item {
+  margin-right: 120px;
 }
 
 .social_list {
   display: flex;
+  gap: 16px;
+}
+
+.social_list_item {
+  width: 40px;
+  height: 40px;
+}
+
+.social_list_send {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris, #4d5ae5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_list_send:hover,
+.social_list_send:focus {
+  background-color: #31d0aa;
 }
 
 /*----------------------------------------------- PORTFOLIO--------------------------- */
@@ -473,7 +502,7 @@ h4 {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--iris);
+  color: var(--iris, #4d5ae5);
   background-color: var(--cloud);
   cursor: pointer;
   padding: 12px 24px;
