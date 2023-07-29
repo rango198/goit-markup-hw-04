@@ -347,6 +347,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social_icon_send:hover,
@@ -390,6 +391,7 @@ h4 {
   height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: var(--lightslate, #8e8f99);
   fill: var(--lightslate, #8e8f99);
   display: flex;
   align-items: center;
