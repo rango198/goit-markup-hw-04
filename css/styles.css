@@ -392,7 +392,7 @@ h4 {
   height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  color: var(--lightslate, #8e8f99);
+  fill: var(--lightslate, #8e8f99);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,6 +406,7 @@ h4 {
 .customers_icon_send:focus {
   border-color: var(--ocean, #404bbf);
   color: var(--ocean, #404bbf);
+  fill: #404bbf;
 }
 
 .section_customers_icon {
