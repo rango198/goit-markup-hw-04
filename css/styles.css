@@ -483,10 +483,11 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section_footer_icon{
-fill: var(--cloud, #f4f4fd);
+.section_footer_icon {
+  fill: var(--cloud, #f4f4fd);
 }
 
 .social_list_send:hover,
@@ -575,20 +576,17 @@ fill: var(--cloud, #f4f4fd);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-list-link:focus{
- box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+.portfolio-list-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
 
 .portfolio-list-link:hover .portfolio_border_text {
   transform: translateY(0%);
 }
-.portfolio-list-link:focus .portfolio_border_text{
-transform: translateY(0%);
+.portfolio-list-link:focus .portfolio_border_text {
+  transform: translateY(0%);
 }
-
-
 
 .portfolio-title {
   font-weight: 500;
