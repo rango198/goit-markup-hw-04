@@ -6,6 +6,7 @@
   --cloud: #f4f4fd;
   --ocean: #404bbf;
   --lightslate: #8e8f99;
+  --dairy: #FCFCFC;
 }
 
 body {
@@ -607,4 +608,38 @@ h4 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+}
+
+/* ------------------------------------modal */
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(70, 78, 167, 0.548);
+}
+
+.modal{
+width: 408px;
+height: 584px;
+border-radius: 4px;
+background: var(--dairy, #FCFCFC);
+border-radius: 4px;
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.modal-close-btn{
+position: absolute;
+top:24px;
+right: 24px;
+}
+
+.is-hidden{
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
 }
