@@ -618,6 +618,7 @@ h4 {
   height: 100%;
   top: 0;
   background-color: rgba(70, 78, 167, 0.548);
+  transition: opacity 300ms linear, visibility 300ms linear;
 }
 
 .modal{
@@ -629,7 +630,13 @@ border-radius: 4px;
 position: absolute;
 top:50%;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%) scale(1);
+transition: transform 300ms linear;
+}
+
+.backdrop .is-hidden .modal {
+transform: translate(-50%, -50%) scale(0);
+
 }
 
 .modal-close-btn{
