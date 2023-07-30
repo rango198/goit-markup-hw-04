@@ -187,7 +187,7 @@ h4 {
     ),
     url(../images/people-office.jpg);
   max-width: 1440px;
-  margin: 0 center;
+  margin: 0 auto;
 }
 
 .title_main {
