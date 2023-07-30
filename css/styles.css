@@ -253,6 +253,7 @@ h4 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  margin-bottom: 8px;
 }
 
 .skills_list_icon {
@@ -662,6 +663,10 @@ h4 {
   position: absolute;
   top: 24px;
   right: 24px;
+}
+
+.backdrop .is-hidden .modal{
+transform: translate(-50%, -50%) scale(0);
 }
 
 .modal_icon_close {
