@@ -125,7 +125,8 @@ h4 {
 
  
 .current {
-  color: var(--navyblue);
+   color: var(--ocean);
+  
 }
 .current::after {
   content: "";
@@ -133,6 +134,7 @@ h4 {
   left: 0;
   bottom: -1px;
   background-color: var(--ocean);
+  color: var(--navyblue);
   border-radius: 2px;
   height: 4px;
   display: block;
