@@ -125,10 +125,12 @@ h4 {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- 
-.current {
-  color: var(--navyblue);
-}
+ .current {
+   color: var(--ocean);
+
+ }
+
+
 .current::after {
   content: "";
   position: absolute;
@@ -141,10 +143,7 @@ h4 {
   display: block;
   width: 100%;
 }
-.current {
-   color: var(--ocean);
-  
-}
+
 .sidebar_nav:hover,
 .sidebar_nav:focus {
   color: var(--ocean);
