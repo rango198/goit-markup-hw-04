@@ -20,6 +20,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -97,6 +98,7 @@ h4 {
 .link {
   text-decoration: none;
 }
+
 .list {
   list-style: none;
 }
@@ -119,14 +121,15 @@ h4 {
   letter-spacing: 0.02em;
   padding: 24px 0;
   position: relative;
-   color: var(--ocean);
+  color: var(--navyblue);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- 
+
 .current {
-  color: var(--navyblue);
+  color: var(--ocean);
 }
+
 .current::after {
   content: "";
   position: absolute;
@@ -161,6 +164,7 @@ h4 {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+
 .address {
   font-style: normal;
   display: flex;
@@ -184,10 +188,8 @@ h4 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
   max-width: 1440px;
   margin: 0 auto;
@@ -203,6 +205,7 @@ h4 {
   margin: auto;
   margin-bottom: 48px;
 }
+
 .main_button {
   background-color: var(--iris);
   font-family: "Roboto", sans-serif;
@@ -220,6 +223,7 @@ h4 {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .main_button:hover,
 .main_button:focus {
   cursor: pointer;
@@ -372,6 +376,7 @@ h4 {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .title_customers {
   font-size: 36px;
   line-height: 1.11;
@@ -514,6 +519,7 @@ h4 {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio_button:hover,
 .portfolio_button:focus {
   color: var(--white);
@@ -572,6 +578,7 @@ h4 {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .portfolio-list-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -580,6 +587,7 @@ h4 {
 .portfolio-list-link:hover .portfolio_border_text {
   transform: translateY(0%);
 }
+
 .portfolio-list-link:focus .portfolio_border_text {
   transform: translateY(0%);
 }
@@ -592,6 +600,7 @@ h4 {
   color: var(--navyblue);
   margin-bottom: 8px;
 }
+
 .portfolio-title_text {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -619,6 +628,7 @@ h4 {
 }
 
 .modal {
+  padding: 72px 24px 0 24px;
   min-width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -627,9 +637,9 @@ h4 {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -673,3 +683,40 @@ h4 {
   visibility: hidden;
   pointer-events: none;
 }
+
+.modal-title {
+  color: var(--navyblue, #2E2F42);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  color: var(--lightslate, #8E8F99);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+
+.form-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--iris, #4D5AE5);
+}
+
+.form-button {}
